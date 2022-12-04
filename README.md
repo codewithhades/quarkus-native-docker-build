@@ -1,4 +1,4 @@
-# Quarkus :zap: Native Build
+# Quarkus :zap: Native Docker Build
 
 ## About Quarkus and this example
 
@@ -48,7 +48,7 @@ mvn package -Pnative -Dquarkus.native.container-build=true -Dquarkus.container-i
 We should be able to see at the end of the build logs the following message
 
 ````txt
-Created container image hades/quarkus-native-build:1.0-SNAPSHOT
+Created container image hades/quarkus-native-docker-build:1.0-SNAPSHOT
 ````
 
 This is a Docker image based on Linux that includes your Quarkus application built as native with GraalVM.
@@ -59,10 +59,10 @@ This is a Docker image based on Linux that includes your Quarkus application bui
 We just simply need to run the created Docker image with
 
 ````bash
-docker run -p 8080:8080 hades/quarkus-native-build:1.0-SNAPSHOT
+docker run -p 8080:8080 hades/quarkus-native-docker-build:1.0-SNAPSHOT
 ````
 
-This should start your application with improved boot time and memory footprint.
+This should start your application with improved boot time and memory footprint. You can browse [localhost:8080/app/api](http://localhost:8080/app) to check the greeting message!
 
 
 ## And before you go...

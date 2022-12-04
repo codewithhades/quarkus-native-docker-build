@@ -1,4 +1,4 @@
-package com.codewithhades.quarkus.nativebuild;
+package com.codewithhades.quarkus.nativedockerbuild;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
