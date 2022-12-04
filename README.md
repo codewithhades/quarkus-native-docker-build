@@ -45,14 +45,13 @@ Once we have done this we just need to simply package the project using Maven wi
 mvn package -Pnative -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true
 ````
 
+This will build a Docker image based on Linux that includes your Quarkus application built as native which is created under the hood by a Quarkus image with GraalVM.
+
 We should be able to see at the end of the build logs the following message
 
 ````txt
 Created container image hades/quarkus-native-docker-build:1.0-SNAPSHOT
 ````
-
-This is a Docker image based on Linux that includes your Quarkus application built as native with GraalVM.
-
 
 ## How to run the Docker image with the executable native file
 
