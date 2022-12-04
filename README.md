@@ -10,7 +10,7 @@ In this example you can check how to build a Docker image containing your Quarku
 
 ## Technical requirements
 
-You are going to need only 2 things
+You are going to need only 3 things
 
 - A Quarkus project, if you need some help at setting it up you can check how [in this example](https://github.com/codewithhades/quarkus-basic-setup)
 - [Docker](https://www.docker.com), so you can build the Docker image
@@ -18,7 +18,7 @@ You are going to need only 2 things
 
 ## How to build the Docker image with the executable native file
 
-To create the Docker image with the executable native file we first need to add the following to the [pom.xml](pom.xml).
+To create the Docker image with the executable native file we first need to add the following to the [pom.xml](pom.xml)
 
 - The Quarkus container image JIB extension dependency in order to create a Docker image with the native file
     ````xml
@@ -51,8 +51,10 @@ We should be able to see at the end of the build logs the following message
 Created container image hades/quarkus-native-build:1.0-SNAPSHOT
 ````
 
+This is a Docker image based on Linux that includes your Quarkus application built as native with GraalVM.
 
-## How to run the executable native file
+
+## How to run the Docker image with the executable native file
 
 We just simply need to run the created Docker image with
 
