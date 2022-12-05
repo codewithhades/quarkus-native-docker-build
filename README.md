@@ -14,7 +14,7 @@ You are going to need only 3 things
 
 - A Quarkus project, if you need some help at setting it up you can check how [in this example](https://github.com/codewithhades/quarkus-basic-setup)
 - [Docker](https://www.docker.com), so you can build the Docker image
-- A compatible [JDK](https://www.oracle.com/java/technologies/downloads) with GraalVM, this example is built on version 17
+- A compatible [JDK](https://www.oracle.com/java/technologies/downloads) with the [Quarkus image builder](https://quay.io/repository/quarkus/ubi-quarkus-mandrel-builder-image?tab=tags), this example is built on version 17
 
 ## How to build the Docker image with the executable native file
 
